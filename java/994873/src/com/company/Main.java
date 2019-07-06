@@ -1,10 +1,17 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        int[] input = new int[]{2, 1, 2, 3, 1, 5, 7};
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+
+        int[] input = new int[N];
+        for(int i=0; i<N; i++) input[i] = in.nextInt();
+
 	    int[] lens = new int[input.length];
 
 	    int max = 0;
